@@ -1,0 +1,69 @@
+.outer{
+    display: flex;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+   margin: 10px;
+}
+.oval {
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    margin: 10px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid purple;
+    margin: 10px;
+}
+.pentagon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin: 10px;
+}
+.hexaOcta{
+    margin-top: 50px;
+    display: flex;
+}
+
+.hexagon {
+    width: 100px;
+    height: 55px;
+    background-color: orange;
+    position: relative;
+}
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+.hexagon:before {
+    top: -27px;
+    border-bottom: 27px solid orange;
+}
+.hexagon:after {
+    bottom: -27px;
+    border-top: 27px solid orange;
+}
+
